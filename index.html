@@ -46,11 +46,33 @@
         .main-menu .navigation>li>a {
             color: white !important;
         }
+        
+        .sticky-header .main-menu .navigation>li>a {
+            color: #1e2436 !important;
+        }
+        .sticky-header .main-menu .navigation>li.current>a {
+            color: white !important;
+        }
         .header-style-two .nav-outer {
             background-color: #1e2436 !important;
         }
         .hidecontent{
             display: none !important;
+        }
+        .main-menu .navigation>li {
+            position: relative;
+            float: left;
+            margin-right: 0px;
+            padding: 0px 30px !important;
+        }
+        .main-header .sticky-header .main-menu .navigation>li>a:hover{
+            color: white !important;
+        }
+        .header-style-two .nav-outer .language .dropdown-menu>li:hover{
+            background-color: #1e2436;
+        }
+        .header-style-two .nav-outer .language .dropdown-menu>li>a:hover{
+            color: white !important;
         }
     </style>
 </head>
@@ -242,7 +264,7 @@
 
 
             <!--Copyright Text-->
-            <div class="copyright-text">&copy; 2017 Educamp. All Rights Reserved.</div>
+            <div class="copyright-text">All Rights Reserved. &copy; 2020. Developed by <a href="http://syedumerhasan.com" target="_blank" rel="noopener noreferrer"> Syed Umer Hasan</a> </div>
 
         </section>
         <!-- End / Hidden Bar -->
@@ -1243,7 +1265,7 @@
                 <div class="auto-container">
                     <div class="row clearfix">
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            <div class="copyright">All Right Researved &copy; 2017, Developed by <a href="http://www.syedumerhasan.com"> Syed Umer Hasan </a> </div>
+                            <div class="copyright">All Right Researved &copy; 2020, Developed by <a href="http://www.syedumerhasan.com"> Syed Umer Hasan </a> </div>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <ul class="footer-nav">
@@ -1276,8 +1298,6 @@
     <script src="js/jquery-ui.js"></script>
     <script src="js/script.js"></script>
 
-    <!--Color Switcher Script-->
-    <script src="js/color-settings.js"></script>
 </body>
 
 </html>

@@ -353,7 +353,6 @@
         $('.sponsors-carousel').owlCarousel({
             loop: false,
             margin: 30,
-            nav: true,
             smartSpeed: 500,
             autoplay: 4000,
             navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
@@ -383,10 +382,11 @@
         $('.four-item-carousel').owlCarousel({
             loop: false,
             margin: 30,
-            nav: true,
             smartSpeed: 700,
             autoplay: 5000,
-            navText: ['<span></span>', '<span></span>'],
+            URLhashListener:true,
+            autoplayHoverPause:true,
+            startPosition: 'URLHash',
             responsive: {
                 0: {
                     items: 1
@@ -414,10 +414,8 @@
         $('.three-item-carousel').owlCarousel({
             loop: false,
             margin: 30,
-            nav: true,
             smartSpeed: 700,
             autoplay: 5000,
-            navText: ['<span></span>', '<span></span>'],
             responsive: {
                 0: {
                     items: 1
@@ -436,7 +434,19 @@
                 }
             }
         });
+
+        
+        $('.customNextBtn').click(function() {
+            $('.three-item-carousel').trigger('next.owl.carousel');
+        });
+        // Go to the previous item
+        $('.customPrevBtn').click(function() {
+            $('.three-item-carousel').trigger('prev.owl.carousel', [300]);
+        });
+
+
     }
+
 
 
     //Two Item Carousel
@@ -447,7 +457,6 @@
             nav: true,
             smartSpeed: 700,
             autoplay: 5000,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
             responsive: {
                 0: {
                     items: 1

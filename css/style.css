@@ -8095,3 +8095,7 @@ img {
     border-color: #ff7417;
     color: #ff7417;
 }
+
+.main-header .info-box li {
+    text-transform: lowercase !important;
+}

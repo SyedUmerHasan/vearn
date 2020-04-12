@@ -351,7 +351,7 @@
     // Sponsors Carousel
     if ($('.sponsors-carousel').length) {
         $('.sponsors-carousel').owlCarousel({
-            loop: true,
+            loop: false,
             margin: 30,
             nav: true,
             smartSpeed: 500,
@@ -378,15 +378,46 @@
     }
 
 
-    //Three Item Carousel
-    if ($('.three-item-carousel').length) {
-        $('.three-item-carousel').owlCarousel({
-            loop: true,
+
+    if ($('.four-item-carousel').length) {
+        $('.four-item-carousel').owlCarousel({
+            loop: false,
             margin: 30,
             nav: true,
             smartSpeed: 700,
             autoplay: 5000,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+            navText: ['<span></span>', '<span></span>'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                480: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                800: {
+                    items: 4
+                },
+                1024: {
+                    items: 4
+                }
+            }
+        });
+    }
+
+
+
+    //Three Item Carousel
+    if ($('.three-item-carousel').length) {
+        $('.three-item-carousel').owlCarousel({
+            loop: false,
+            margin: 30,
+            nav: true,
+            smartSpeed: 700,
+            autoplay: 5000,
+            navText: ['<span></span>', '<span></span>'],
             responsive: {
                 0: {
                     items: 1

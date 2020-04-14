@@ -394,7 +394,7 @@
         <!--End Search Form-->
 
         <!--Our Courses-->
-        <section class="our-courses">
+        <section class="our-courses" style="max-width: 100%;">
             <div class="">
                 <!--Sec Title-->
                 <div class="sec-title centered">
@@ -1351,14 +1351,25 @@
             $('.course-slider').trigger('prev.owl.carousel', [300]);
         });
         // Go to the previous item
-        $('.course-slider').mouseenter(function() {
-            console.log("i am in");
-            $('.customNextBtn').addClass('hover-slider');
-        });
-        $('.course-slider').mouseleave(function() {
-            console.log("i am out");
-            $('.customNextBtn').removeClass('hover-slider');
-        });
+        // $('.course-slider').mouseenter(function() {
+        //     $('.customNextBtn').addClass('hover-slider');
+        // });
+        // $('.course-slider').mouseleave(function() {
+
+        //     $('.customNextBtn').removeClass('hover-slider');
+        // });
+        $( ".course-slider" ).hover(function() {
+                $( ".customNextBtn" ).addClass( "hover-slider" );
+            }, function() {
+                $( ".customNextBtn" ).removeClass( "hover-slider" );
+            }
+        );
+        $( ".customNextBtn" ).hover(function() {
+                $( ".customNextBtn" ).addClass( "hover-slider" );
+            }, function() {
+                $( ".customNextBtn" ).removeClass( "hover-slider" );
+            }
+        );
         
 
 
